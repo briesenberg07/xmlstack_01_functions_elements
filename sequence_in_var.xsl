@@ -13,17 +13,16 @@
     <xsl:variable name="sorted_list_2" as="node()*">
         <xsl:perform-sort select="
                 mapstor:mapStorage[@mapid_institution = $mapid_institution]/
-                mapstor:propSet/
-                mapstor:prop
+                mapstor:propSet/mapstor:prop
                 [mapstor:platformSet/mapstor:sinopia/mapstor:implementationSet/
                 mapstor:resource[@mapid_resource = $mapid_resource]
-                [mapstor:format[@mapid_format = $mapid_format]]
-                [mapstor:user[@mapid_user = $mapid_user]]]">
+                [mapstor:format/@mapid_format = $mapid_format]
+                [mapstor:user/@mapid_user = $mapid_user]]">
             <xsl:sort select="
                     mapstor:platformSet/mapstor:sinopia/mapstor:implementationSet/
                     mapstor:resource[@mapid_resource = $mapid_resource]
-                    [mapstor:format[@mapid_format = $mapid_format]]
-                    [mapstor:user[@mapid_user = $mapid_user]]/
+                    [mapstor:format/@mapid_format = $mapid_format]
+                    [mapstor:user/@mapid_user = $mapid_user]/
                     mapstor:form_order/@value"/>
         </xsl:perform-sort>
     </xsl:variable>
