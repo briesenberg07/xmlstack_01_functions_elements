@@ -14,7 +14,7 @@
         </xsl:map>
     </xsl:variable>
 
-    <!-- ...I don't know what to do with it -->
+    <!-- ...so, I'll do stuff with it? -->
     <xsl:template match="/">
         <xsl:value-of select="map:find($acronyms, 'YAYA')"/>
         <xsl:text>&#xA;</xsl:text>
