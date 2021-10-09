@@ -23,5 +23,4 @@
     FAILED
     'Attribute name "crossorigin" associated with an element type "link" must be followed by the ' = ' character.'
     -->
-    
 </xsl:stylesheet>
