@@ -10,16 +10,14 @@
 
     <xsl:variable name="sorted_property" as="node()*">
         <xsl:for-each select="
-                document('../map_storage/test_propSet_rda_Manifestation.xml')/mapstor:propSet/mapstor:prop
+                document('../map_storage/test_propSet_rda_Manifestation.xml')/
+                mapstor:propSet/mapstor:prop
                 [mapstor:platformSet/mapstor:sinopia/mapstor:implementationSet/mapstor:resource[@mapid_resource = $mapid_resource]
                 [mapstor:format[@mapid_format = $mapid_format]]
                 [mapstor:user[@mapid_user = $mapid_user]]]">
             <xsl:sort select="
                     mapstor:platformSet/mapstor:sinopia/mapstor:implementationSet/
-                    mapstor:resource[@mapid_resource = $mapid_resource]
-                    [mapstor:format[@mapid_format = $mapid_format]]
-                    [mapstor:user[@mapid_user = $mapid_user]]/
-                    mapstor:form_order/@value"/>
+                    mapstor:resource/mapstor:form_order/@value"/>
             <xsl:copy-of select="."/>
         </xsl:for-each>
     </xsl:variable>
@@ -37,6 +35,9 @@
                     <label>
                         <xsl:value-of select="mapstor:prop_label"/>
                     </label>
+                    <iri>
+                        <xsl:value-of select="mapstor:prop_iri/@iri"/>
+                    </iri>
                     <form_order>
                         <xsl:value-of select="
                                 mapstor:platformSet/mapstor:sinopia/mapstor:implementationSet/
