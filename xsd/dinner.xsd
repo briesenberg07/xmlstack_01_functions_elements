@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" attributeFormDefault="unqualified"
+    xmlns:dinner="https://briesenberg07.github.io/xml_stack/xsd/"
+    targetNamespace="https://briesenberg07.github.io/xml_stack/xsd/dinner">
+    
+    <xs:element name="dinner" type="dinner:dinner_type"/>
+    
+    <xs:complexType name="dinner_type">
+        <xs:sequence>
+            <xs:element name="appetizer"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+</xs:schema>
