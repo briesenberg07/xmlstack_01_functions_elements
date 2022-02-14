@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
     elementFormDefault="qualified" attributeFormDefault="unqualified"
-    xmlns:dinner="https://briesenberg07.github.io/xml_stack/xsd/"
+    xmlns:dinner="https://briesenberg07.github.io/xml_stack/xsd/dinner"
+    xmlns:vegetables="https://briesenberg07.github.io/libraryNotes/xsd/vegetables"
     targetNamespace="https://briesenberg07.github.io/xml_stack/xsd/dinner">
+    
+    <xs:import namespace="https://briesenberg07.github.io/libraryNotes/xsd/vegetables" 
+        schemaLocation="https://briesenberg07.github.io/libraryNotes/xsd/vegetables.xsd"/>
     
     <xs:element name="dinner" type="dinner:dinner_type"/>
     
     <xs:complexType name="dinner_type">
         <xs:sequence>
-            <xs:element name="appetizer"></xs:element>
+            <xs:element name="appetizer" type="dinner:appetizer_type"/>
+            <xs:element name="vegetable" type="vegetables:vegetable_type"/>
         </xs:sequence>
     </xs:complexType>
     
+    <xs:simpleType name="appetizer_type">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
     
 </xs:schema>
