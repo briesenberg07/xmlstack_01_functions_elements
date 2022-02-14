@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <propSet xmlns="https://uwlib-cams.github.io/map_storage/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://uwlib-cams.github.io/map_storage/ https://uwlib-cams.github.io/map_storage/map_storage.xsd">
     <prop localid_prop="rda_Manifestation_m/P30276">
@@ -117,3 +118,124 @@
         </platformSet>
     </prop>
 </propSet>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<propSet xmlns="https://uwlib-cams.github.io/map_storage/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://uwlib-cams.github.io/map_storage/ https://uwlib-cams.github.io/map_storage/map_storage.xsd">
+    <prop localid_prop="rda_Manifestation_m/P30276">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30276" />
+        <prop_label xml:lang="en">has access point for manifestation</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+        <platformSet>
+            <sinopia>
+                <implementationSet localid_implementationSet="is_P30276_001">
+                    <!-- schema quesstion: possible to require value 'Manifestation' because this
+               implementation set is in the rda_Manifestation propSet?? -->
+                    <resource mapid_resource="Manifestation">
+                        <format mapid_format="monograph"/>
+                        <user mapid_user="ries07"/>
+                        <form_order value="1.0" />
+                        <sinopia_prop_attributes>
+                            <sinopia_prop_type value="literal" />
+                            <required value="true" />
+                            <repeatable value="false" />
+                            <!-- schema question: possible to require @value value only if 
+                     repeatable @value='true'?? -->
+                            <ordered />
+                            <sinopia_prop_type_attributes>
+                                <literal_attributes>
+                                    <!-- to do provide default xml:lang value 'en' -->
+                                    <default_literal xml:lang="en">This is an access point</default_literal>
+                                </literal_attributes>
+                            </sinopia_prop_type_attributes>
+                        </sinopia_prop_attributes>
+                    </resource>
+                </implementationSet>
+            </sinopia>
+        </platformSet>
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30208">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30208" />
+        <prop_label xml:lang="en">has base material</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30217">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30217" />
+        <prop_label xml:lang="en">has details of base material</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30084">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30084" />
+        <prop_label xml:lang="en">has applied material</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30216">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30216" />
+        <prop_label xml:lang="en">has details of applied material</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+        <platformSet>
+            <sinopia>
+                <implementationSet localid_implementationSet="is_P30216_001">
+                    <resource mapid_resource="Manifestation">
+                        <format mapid_format="monograph"/>
+                        <user mapid_user="ries07"/>
+                        <form_order value="0.5" />
+                        <sinopia_prop_attributes>
+                            <sinopia_prop_type value="literal" />
+                            <required value="false" />
+                            <repeatable value="true" />
+                            <ordered value="false" />
+                            <sinopia_prop_type_attributes>
+                                <literal_attributes>
+                                    <default_literal xml:lang="en">the details of applied material--it really was applied!</default_literal>
+                                </literal_attributes>
+                            </sinopia_prop_type_attributes>
+                        </sinopia_prop_attributes>
+                    </resource>
+                </implementationSet>
+            </sinopia>
+        </platformSet>
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30171">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30171" />
+        <prop_label xml:lang="en">has dimensions of still image</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30277">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30277" />
+        <prop_label xml:lang="en">has appellation of manifestation</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30294">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30294" />
+        <prop_label xml:lang="en">has authorized access point for manifestation</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+    </prop>
+    <prop localid_prop="rda_Manifestation_m/P30164">
+        <prop_iri iri="http://rdaregistry.info/Elements/m/P30164" />
+        <prop_label xml:lang="en">has groove characteristic</prop_label>
+        <prop_domain iri="http://rdaregistry.info/Elements/c/C10007" />
+        <platformSet>
+            <sinopia>
+                <implementationSet localid_implementationSet="is_P30164_001">
+                    <resource mapid_resource="Manifestation">
+                        <format mapid_format="monograph"/>
+                        <user mapid_user="ries07"/>
+                        <form_order value="0.000001" />
+                        <sinopia_prop_attributes>
+                            <sinopia_prop_type value="uri_or_lookup" />
+                            <required value="false" />
+                            <repeatable value="false" />
+                            <ordered />
+                            <sinopia_prop_type_attributes>
+                                <uri_attributes>
+                                    <default_uri iri="http://rdaregistry.info/termList/grooveWidth/1001" />
+                                </uri_attributes>
+                            </sinopia_prop_type_attributes>
+                        </sinopia_prop_attributes>
+                    </resource>
+                </implementationSet>
+            </sinopia>
+        </platformSet>
+    </prop>
+</propSet>
+>>>>>>> f2d738298ccb483fe95a8f8a604d91d4eecf4443
