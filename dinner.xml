@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dinner xmlns="https://briesenberg07.github.io/xml_stack/xsd/dinner" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:dinner="https://briesenberg07.github.io/xml_stack/xsd/dinner"
+    xmlns:vegetables="https://briesenberg07.github.io/libraryNotes/xsd/vegetables"
     xsi:schemaLocation="https://briesenberg07.github.io/xml_stack/xsd/dinner.xsd">
-    
+    <dinner:appetizer>the appetizer was delicious!</dinner:appetizer>
+    <vegetables:vegetable>What a delicious artichoke souffle!</vegetables:vegetable>
+    <dinner:wine>Will this validate??</dinner:wine>
 </dinner>
