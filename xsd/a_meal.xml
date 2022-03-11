@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dinner xmlns="https://briesenberg07.github.io/xml_stack/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://briesenberg07.github.io/xml_stack/xsd dinner.xsd
+    https://briesenberg07.github.io/libraryNotes/xsd vegetables.xsd">
+    
+</dinner>
