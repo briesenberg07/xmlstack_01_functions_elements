@@ -1,4 +1,6 @@
 # xsl:key + fn:key
+## Note
+- `fn:key` and `xsl:key` are still difficult for me! TO DO is read dh.obdurodon.org [on the xsl:key element](http://dh.obdurodon.org/xslt-basics-2.xhtml)
 ## Resources
 ### xsl:key
 - [Saxon documentation](https://www.saxonica.com/html/documentation/xsl-elements/key.html)
