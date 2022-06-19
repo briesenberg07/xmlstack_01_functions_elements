@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <comment>
+        <p>I want to transform this XML document with two different stylesheets.</p>
+    </comment>
+    <items>
+        <food>sushi</food>
+        <food>pizza</food>
+        <food>sandwich</food>
+        <place>Paris</place>
+        <place>Montana</place>
+        <place>Tokyo</place>
+    </items>
+</doc>
