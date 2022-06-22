@@ -8,7 +8,8 @@
     <xsl:template match="/">
         
         <xsl:variable name="output_01">
-            <xsl:sequence select="let $transform := transform(
+            <xsl:sequence 
+                select="let $transform := transform(
                 map {
                 'stylesheet-location': 'xslt001.xsl',
                 'source-node': document('input.xml')
@@ -17,7 +18,8 @@
         </xsl:variable>
         
         <xsl:variable name="output_02">
-            <xsl:sequence select="let $transform := transform(
+            <xsl:sequence 
+                select="let $transform := transform(
                 map {
                 'stylesheet-location': 'xslt002.xsl',
                 'source-node': $output_01
