@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<doc>
-   <comment>
-      <p>I want to transform this XML document with two different stylesheets.</p>
-   </comment>
-   <items>
-      <food>sushi</food>
-      <food>pizza</food>
-      <food>sandwich</food>
-      <fact>Here's a matching place: Paris</fact>
-      <fact>Here's a matching place: Montana</fact>
-   </items>
+<?xml version="1.0" encoding="UTF-8"?><doc>
+    <comment>
+        <p>I want to transform this XML document with two different stylesheets.</p>
+    </comment>
+    <items>
+        <fact>Here's a matching food: sushi</fact>
+        <fact>Here's a matching food: pizza</fact>
+        
+        <fact>Here's a matching place: Paris</fact>
+        <fact>Here's a matching place: Montana</fact>
+        
+    </items>
 </doc>
