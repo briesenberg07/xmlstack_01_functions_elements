@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:uwmaps="https://uwlib-cams.github.io/map_storage/xsd/"
     xmlns:uwsinopia="https://uwlib-cams.github.io/sinopia_maps/xsd/"
-    exclude-result-prefixes="xs uwmaps uwsinopia" version="3.0">
+    exclude-result-prefixes="xs uwmaps uwsinopia" expand-text="true" version="3.0">
 
     <!-- 
         transformation scenario in sinopia_maps uses 
@@ -12,18 +12,17 @@
     -->
 
     <xsl:strip-space elements="*"/>
-    <!-- CRLF was counted as a node! This ^^ was needed -->
     <xsl:output method="xml" indent="1"/>
     <xsl:mode on-no-match="shallow-copy"/>
 
+    <!-- starting on Theo's fine-tuned version below... incomplete -->
     <xsl:template match="uwsinopia:implementation_set">
-        <!-- don't need the var, put position() in attr value template -->
-        <uwsinopia:implementation_set
-            localid_implementation_set="{concat(../../@localid_prop, '_is_', position())}">
+        <xsl:copy>
+            <!-- other than apply-templates, only copy attribute and create new value (?) -->
+            <xsl:attribute name=""/>
             <xsl:apply-templates/>
-            <!-- this ^^ applies default mode shallow-copy  -->
-            <!-- no need for xsl:copy-of here -->
-        </uwsinopia:implementation_set>
+        </xsl:copy>
+
     </xsl:template>
 
 </xsl:stylesheet>
