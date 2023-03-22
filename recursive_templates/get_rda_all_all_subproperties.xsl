@@ -14,23 +14,21 @@
     <xsl:template match="/">
         <xsl:param name="work_prop_iri" select="$work_prop_iri"/>
         <results>
-            <prop iri="{$work_prop_iri}">
+            <prop pno="{substring-after($work_prop_iri, 'http://rdaregistry.info/Elements/w/')}">
                 <xsl:value-of select="
                         $work_props/rdf:RDF/
                         rdf:Description[@rdf:about = $work_prop_iri]/rdfs:label[@xml:lang = 'en']"
                 />
             </prop>
-            <xsl:for-each select="$work_props/rdf:RDF/rdf:Description">
-                <xsl:if test="rdfs:subPropertyOf/@rdf:resource = $work_prop_iri">
-                    <subprops>
-                        <xsl:call-template name="all_all_subprops">
-                            <xsl:with-param name="work_props" select="$work_props"/>
-                            <xsl:with-param name="prop_iri" select="@rdf:about"/>
-                            <xsl:with-param name="prop_label" select="rdfs:label[@xml:lang = 'en']"
-                            />
-                        </xsl:call-template>
-                    </subprops>
-                </xsl:if>
+            <xsl:for-each
+                select="$work_props/rdf:RDF/rdf:Description[rdfs:subPropertyOf/@rdf:resource = $work_prop_iri]">
+                <subprop>
+                    <xsl:call-template name="all_all_subprops">
+                        <xsl:with-param name="work_props" select="$work_props"/>
+                        <xsl:with-param name="prop_iri" select="@rdf:about"/>
+                        <xsl:with-param name="prop_label" select="rdfs:label[@xml:lang = 'en']"/>
+                    </xsl:call-template>
+                </subprop>
             </xsl:for-each>
         </results>
     </xsl:template>
@@ -39,19 +37,18 @@
         <xsl:param name="work_props"/>
         <xsl:param name="prop_iri"/>
         <xsl:param name="prop_label"/>
-        <prop iri="{$prop_iri}">
+        <prop pno="{substring-after($prop_iri, 'http://rdaregistry.info/Elements/w/')}">
             <xsl:value-of select="$prop_label"/>
         </prop>
-        <xsl:for-each select="$work_props/rdf:RDF/rdf:Description">
-            <xsl:if test="rdfs:subPropertyOf/@rdf:resource = $prop_iri">
-                <subprops>
-                    <xsl:call-template name="all_all_subprops">
-                        <xsl:with-param name="work_props" select="$work_props"/>
-                        <xsl:with-param name="prop_iri" select="@rdf:about"/>
-                        <xsl:with-param name="prop_label" select="rdfs:label[@xml:lang = 'en']"/>
-                    </xsl:call-template>
-                </subprops>
-            </xsl:if>
+        <xsl:for-each
+            select="$work_props/rdf:RDF/rdf:Description[rdfs:subPropertyOf/@rdf:resource = $prop_iri]">
+            <subprop>
+                <xsl:call-template name="all_all_subprops">
+                    <xsl:with-param name="work_props" select="$work_props"/>
+                    <xsl:with-param name="prop_iri" select="@rdf:about"/>
+                    <xsl:with-param name="prop_label" select="rdfs:label[@xml:lang = 'en']"/>
+                </xsl:call-template>
+            </subprop>
         </xsl:for-each>
     </xsl:template>
 

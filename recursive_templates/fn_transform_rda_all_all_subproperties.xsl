@@ -33,8 +33,6 @@
             <xsl:sequence select="$output_02"/>
         </xsl:result-document>
         
-    </xsl:template>
-    
-    
+    </xsl:template>    
     
 </xsl:stylesheet>

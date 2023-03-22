@@ -7,13 +7,13 @@
     <xsl:mode on-no-match="shallow-copy"/>
 
     <xsl:template match="prop">
-        <xsl:variable name="iri" select="@iri"/>
+        <xsl:variable name="pno" select="@pno"/>
         <xsl:element name="prop">
             <xsl:attribute name="count">
-                <xsl:value-of select="count(//prop[@iri = $iri])"/>
+                <xsl:value-of select="count(//prop[@pno = $pno])"/>
             </xsl:attribute>
-            <xsl:attribute name="iri">
-                <xsl:value-of select="@iri"/>
+            <xsl:attribute name="pno">
+                <xsl:value-of select="@pno"/>
             </xsl:attribute>
             <xsl:value-of select="."/>
         </xsl:element>
