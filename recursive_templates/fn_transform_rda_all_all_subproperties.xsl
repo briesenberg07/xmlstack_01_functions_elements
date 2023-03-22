@@ -19,18 +19,18 @@
                 return $transform?output"/>
         </xsl:variable>
         
-        <!-- <xsl:variable name="output_02">
+        <xsl:variable name="output_02">
             <xsl:sequence 
                 select="let $transform := transform(
                 map {
-                'stylesheet-location': 'xslt002.xsl',
+                'stylesheet-location': 'count_rda_all_all_subproperties.xsl',
                 'source-node': $output_01
                 })
                 return $transform?output"/>
-        </xsl:variable> -->
+        </xsl:variable>
         
         <xsl:result-document href="output.xml">
-            <xsl:sequence select="$output_01"/>
+            <xsl:sequence select="$output_02"/>
         </xsl:result-document>
         
     </xsl:template>
