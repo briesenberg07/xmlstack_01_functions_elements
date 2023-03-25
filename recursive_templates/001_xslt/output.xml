@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <results xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:reg="http://metadataregistry.org/uri/profile/regap/">
    <prop count="1" pno="P10307">has related RDA entity of work</prop>
    <subprop>
       <prop count="1" pno="P10311">has related agent of work</prop>
@@ -18,9 +19,6 @@
          <subprop>
             <prop count="2" pno="P10413">has addressee person</prop>
          </subprop>
-      </subprop>
-      <subprop>
-         <prop count="1" pno="P10208">has granting institution or faculty (Deprecated)</prop>
       </subprop>
       <subprop>
          <prop count="1" pno="P10287">has commissioning agent</prop>
@@ -3497,24 +3495,6 @@
          </subprop>
       </subprop>
       <subprop>
-         <prop count="1" pno="P10047">has other agent associated with work (Deprecated)</prop>
-         <subprop>
-            <prop count="1" pno="P10038"/>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10037"/>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10040"/>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10018"/>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10039"/>
-         </subprop>
-      </subprop>
-      <subprop>
          <prop count="1" pno="P10067">has sponsoring agent of work</prop>
          <subprop>
             <prop count="2" pno="P10604">has sponsoring collective agent of work</prop>
@@ -3858,16 +3838,7 @@
                <prop count="3" pno="P10270">is commentary on item</prop>
             </subprop>
             <subprop>
-               <prop count="3" pno="P10269">is critique of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
                <prop count="3" pno="P10266">is analysis of item</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10267">is evaluation of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10268">is review of item (Deprecated)</prop>
             </subprop>
             <subprop>
                <prop count="3" pno="P10616">is metadata description of item</prop>
@@ -3877,15 +3848,6 @@
    </subprop>
    <subprop>
       <prop count="1" pno="P10198">has related work of work</prop>
-      <subprop>
-         <prop count="1" pno="P10228">has accompanying work relationship with (Deprecated)</prop>
-      </subprop>
-      <subprop>
-         <prop count="1" pno="P10229"/>
-      </subprop>
-      <subprop>
-         <prop count="1" pno="P10232">has whole-part work relationship with (Deprecated)</prop>
-      </subprop>
       <subprop>
          <prop count="1" pno="P10291">is inspiration for</prop>
          <subprop>
@@ -3922,19 +3884,7 @@
             <prop count="1" pno="P10123">has appendix work</prop>
          </subprop>
          <subprop>
-            <prop count="1" pno="P10158">has index work (Deprecated)</prop>
-         </subprop>
-         <subprop>
             <prop count="1" pno="P10026">has cadenza work</prop>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10110">has catalogue work (Deprecated)</prop>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10157">has finding aid work (Deprecated)</prop>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10111">has concordance work (Deprecated)</prop>
          </subprop>
          <subprop>
             <prop count="1" pno="P10092">has errata work</prop>
@@ -4063,9 +4013,6 @@
             <prop count="1" pno="P10029">is cadenza composed for work</prop>
          </subprop>
          <subprop>
-            <prop count="1" pno="P10201">is finding aid for work (Deprecated)</prop>
-         </subprop>
-         <subprop>
             <prop count="1" pno="P10151">is appendix to work</prop>
          </subprop>
          <subprop>
@@ -4075,9 +4022,6 @@
             <prop count="1" pno="P10150">is guide to work</prop>
          </subprop>
          <subprop>
-            <prop count="1" pno="P10188">is index to work (Deprecated)</prop>
-         </subprop>
-         <subprop>
             <prop count="1" pno="P10154">is supplement to work</prop>
          </subprop>
          <subprop>
@@ -4085,12 +4029,6 @@
          </subprop>
          <subprop>
             <prop count="1" pno="P10152">is illustrations for work</prop>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10180">is catalogue of work (Deprecated)</prop>
-         </subprop>
-         <subprop>
-            <prop count="1" pno="P10181">is concordance to work (Deprecated)</prop>
          </subprop>
       </subprop>
       <subprop>
@@ -4133,13 +4071,7 @@
          <prop count="1" pno="P10122">has prequel work</prop>
       </subprop>
       <subprop>
-         <prop count="1" pno="P10296"/>
-      </subprop>
-      <subprop>
          <prop count="1" pno="P10020">has sequel work</prop>
-      </subprop>
-      <subprop>
-         <prop count="1" pno="P10231"/>
       </subprop>
       <subprop>
          <prop count="2" pno="P10257">has subject work</prop>
@@ -4189,9 +4121,6 @@
             <prop count="1" pno="P10342">has transformation by genre</prop>
             <subprop>
                <prop count="1" pno="P10148">has derivative work</prop>
-               <subprop>
-                  <prop count="1" pno="P10090">is indexed in work (Deprecated)</prop>
-               </subprop>
                <subprop>
                   <prop count="1" pno="P10089">is abstracted in work</prop>
                </subprop>
@@ -4276,9 +4205,6 @@
             <prop count="1" pno="P10344">has transformation by policy</prop>
             <subprop>
                <prop count="1" pno="P10170">is succeeded by work</prop>
-               <subprop>
-                  <prop count="1" pno="P10195">is prequel to (Deprecated)</prop>
-               </subprop>
                <subprop>
                   <prop count="1" pno="P10191">is continued by work</prop>
                </subprop>
@@ -4418,9 +4344,6 @@
                   <prop count="1" pno="P10184">is expanded version of work</prop>
                </subprop>
                <subprop>
-                  <prop count="1" pno="P10194">is indexing for work (Deprecated)</prop>
-               </subprop>
-               <subprop>
                   <prop count="1" pno="P10139">is digest of work</prop>
                </subprop>
                <subprop>
@@ -4441,9 +4364,6 @@
             <prop count="1" pno="P10345">is transformation by policy of</prop>
             <subprop>
                <prop count="1" pno="P10156">is preceded by work</prop>
-               <subprop>
-                  <prop count="1" pno="P10227">is sequel to (Deprecated)</prop>
-               </subprop>
                <subprop>
                   <prop count="1" pno="P10224">is absorption of work</prop>
                </subprop>
@@ -4629,16 +4549,7 @@
                <prop count="3" pno="P10270">is commentary on item</prop>
             </subprop>
             <subprop>
-               <prop count="3" pno="P10269">is critique of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
                <prop count="3" pno="P10266">is analysis of item</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10267">is evaluation of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10268">is review of item (Deprecated)</prop>
             </subprop>
             <subprop>
                <prop count="3" pno="P10616">is metadata description of item</prop>
@@ -4884,16 +4795,7 @@
                <prop count="3" pno="P10270">is commentary on item</prop>
             </subprop>
             <subprop>
-               <prop count="3" pno="P10269">is critique of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
                <prop count="3" pno="P10266">is analysis of item</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10267">is evaluation of item (Deprecated)</prop>
-            </subprop>
-            <subprop>
-               <prop count="3" pno="P10268">is review of item (Deprecated)</prop>
             </subprop>
             <subprop>
                <prop count="3" pno="P10616">is metadata description of item</prop>

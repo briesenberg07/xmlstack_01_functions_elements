@@ -3,8 +3,12 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" exclude-result-prefixes="xs math"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:reg="http://metadataregistry.org/uri/profile/regap/"
+    exclude-result-prefixes="xs math"
     version="3.0">
+    
+    <xsl:output method="xml" indent="1"/>
 
     <xsl:param name="work_prop_iri" select="'http://rdaregistry.info/Elements/w/P10307'"/>
 
@@ -21,7 +25,9 @@
                 />
             </prop>
             <xsl:for-each
-                select="$work_props/rdf:RDF/rdf:Description[rdfs:subPropertyOf/@rdf:resource = $work_prop_iri]">
+                select="$work_props/rdf:RDF/rdf:Description
+                [rdfs:subPropertyOf/@rdf:resource = $work_prop_iri]
+                [not(reg:status[@rdf:resource = 'http://metadataregistry.org/uri/RegStatus/1008'])]">
                 <subprop>
                     <xsl:call-template name="all_all_subprops">
                         <xsl:with-param name="work_props" select="$work_props"/>
@@ -41,7 +47,9 @@
             <xsl:value-of select="$prop_label"/>
         </prop>
         <xsl:for-each
-            select="$work_props/rdf:RDF/rdf:Description[rdfs:subPropertyOf/@rdf:resource = $prop_iri]">
+            select="$work_props/rdf:RDF/rdf:Description
+            [rdfs:subPropertyOf/@rdf:resource = $prop_iri]
+            [not(reg:status[@rdf:resource = 'http://metadataregistry.org/uri/RegStatus/1008'])]">
             <subprop>
                 <xsl:call-template name="all_all_subprops">
                     <xsl:with-param name="work_props" select="$work_props"/>

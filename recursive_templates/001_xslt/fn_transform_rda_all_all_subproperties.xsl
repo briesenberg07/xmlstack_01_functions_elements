@@ -23,7 +23,7 @@
             <xsl:sequence 
                 select="let $transform := transform(
                 map {
-                'stylesheet-location': 'count_rda_all_all_subproperties.xsl',
+                'stylesheet-location': '../count_rda_all_all_subproperties.xsl',
                 'source-node': $output_01
                 })
                 return $transform?output"/>
