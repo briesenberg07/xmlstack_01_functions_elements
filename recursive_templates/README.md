@@ -20,4 +20,5 @@ Three recursive templates...
 \*\* *They seem to function essentially the same **to me**, but I must be missing something!*
 
 ### NOTE 2
-It seems like [fn:distinct-values](https://www.w3.org/TR/xpath-functions-31/#func-distinct-values) be helpful in achieving the desired output.
+- It seems like [fn:distinct-values](https://www.w3.org/TR/xpath-functions-31/#func-distinct-values) be helpful in achieving the desired output.
+- See [get_rda_all_all_subproperties_flat_distinct_01.xsl](get_rda_all_all_subproperties_flat_distinct_01.xsl) for a start on implementing the function.
