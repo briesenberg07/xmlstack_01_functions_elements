@@ -13,7 +13,7 @@
             <xsl:sequence 
                 select="let $transform := transform(
                 map {
-                'stylesheet-location': 'get_rda_all_all_subproperties.xsl',
+                'stylesheet-location': 'get_rda_all_all_subproperties_nested_01.xsl',
                 'source-node': document('https://github.com/RDARegistry/RDA-Vocabularies/raw/master/xml/Elements/w.xml')
                 })
                 return $transform?output"/>
@@ -23,13 +23,13 @@
             <xsl:sequence 
                 select="let $transform := transform(
                 map {
-                'stylesheet-location': '../count_rda_all_all_subproperties.xsl',
+                'stylesheet-location': 'count_nested.xsl',
                 'source-node': $output_01
                 })
                 return $transform?output"/>
         </xsl:variable>
         
-        <xsl:result-document href="output.xml">
+        <xsl:result-document href="output_nested_01.xml">
             <xsl:sequence select="$output_02"/>
         </xsl:result-document>
         

@@ -12,13 +12,14 @@
     <xsl:output method="xml" indent="1"/>
 
     <xsl:variable name="rda_sets"
-        select="document('all_sets.xml')"/>
+        select="document('../all_sets.xml')"/>
     
     <!-- ???
-        Now I'm not getting the same number of properties in output... -->
+        Compare to ../001_nested_output/output_001.xml:
+        I'm not getting the same number of properties in output... -->
 
     <xsl:template match="/">
-        <xsl:result-document href="output_similar.xml">
+        <xsl:result-document href="output_flat_01.xml">
             <results>
                 <xsl:for-each
                     select="$rda_sets/mapstor:get_prop_sets/mapstor:get_set">
@@ -44,7 +45,6 @@
     <xsl:template name="all_all_subprops">
         <xsl:param name="set_source"/>
         <xsl:param name="prop_iri"/>
-        <xsl:param name="prop_label"/>
         <sinopia:hasPropertyUri rdf:resource="{$prop_iri}"/>
         <xsl:for-each select="
                 $set_source/rdf:RDF/rdf:Description

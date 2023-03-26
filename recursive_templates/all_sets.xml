@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <get_prop_sets xmlns="https://uwlib-cams.github.io/map_storage/xsd/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    
     <get_set>
         <set_name>rdaw_p10k</set_name>
         <use_prop>http://rdaregistry.info/Elements/w/P10307</use_prop>
