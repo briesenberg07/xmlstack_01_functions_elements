@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <animals>
+        <animal>rhinocerous</animal>
+        <animal>zebra</animal>
+        <animal>horse</animal>
+    </animals>
+    <sushi_rolls>
+        <sushi_roll>cucumber</sushi_roll>
+        <sushi_roll>eel</sushi_roll>
+        <sushi_roll>salmon</sushi_roll>
+        <animal>pony</animal>
+        <animal>anteater</animal>
+    </sushi_rolls>
+</root>
