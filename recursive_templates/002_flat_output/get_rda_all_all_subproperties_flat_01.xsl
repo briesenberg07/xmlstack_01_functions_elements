@@ -14,9 +14,10 @@
     <xsl:variable name="rda_sets"
         select="document('../all_sets.xml')"/>
     
-    <!-- ???
-        Compare to ../001_nested_output/output_001.xml:
-        I'm not getting the same number of properties in output... -->
+    <!-- 
+        ../001_nested_output/output_001.xml = 1601 props for P10307
+        output_flat_01.xml (from this stylesheet) = 1601 props for P10307        
+         -->
 
     <xsl:template match="/">
         <xsl:result-document href="output_flat_01.xml">
@@ -47,7 +48,7 @@
         <xsl:param name="prop_iri"/>
         <sinopia:hasPropertyUri rdf:resource="{$prop_iri}"/>
         <xsl:for-each select="
-                $set_source/rdf:RDF/rdf:Description
+                document($set_source)/rdf:RDF/rdf:Description
                 [rdfs:subPropertyOf/@rdf:resource = $prop_iri]
                 [not(reg:status[@rdf:resource = 'http://metadataregistry.org/uri/RegStatus/1008'])]">
             <xsl:call-template name="all_all_subprops">
