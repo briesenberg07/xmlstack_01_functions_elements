@@ -1,0 +1,1 @@
+doc('xpath_tests.xml')/root/animals//animal
