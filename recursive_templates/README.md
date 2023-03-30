@@ -15,7 +15,8 @@ Three recursive templates...
 ...which function\*\* essentially the same, output a different number of elements when retrieving subproperties, subproperties of subproperties, etc. for the RDA/RDF property [has related RDA entity of work](http://rdaregistry.info/Elements/w/P10307). See output from...
 - get_rda_all_all_subproperties_nested_01.xsl >>> [output_nested_01.xml](https://github.com/briesenberg07/xml_stack/blob/6e761b8ca0f44f8b5c3b46b6a8299919ec5ae4c9/recursive_templates/001_nested_output/output_nested_01.xml) (1,601 elements in output for P10307)
 - get_rda_all_all_subproperties_flat_01.xsl >>> [output_flat_01.xml](https://github.com/briesenberg07/xml_stack/blob/6e761b8ca0f44f8b5c3b46b6a8299919ec5ae4c9/recursive_templates/002_flat_output/output_flat_01.xml#L11-L20) (10 elements in output for P10307)
-- get_rda_all_all_subproperties_flat_02.xsl >>> [output_flat_02.xml](https://github.com/briesenberg07/xml_stack/blob/6e761b8ca0f44f8b5c3b46b6a8299919ec5ae4c9/recursive_templates/002_flat_output/output_flat_02.xml#L11-L29) (19 elements in output for P10307)
+- get_rda_all_all_subproperties_flat_02.xsl >>> [output_flat_02.xml](https://github.com/briesenberg07/xml_stack/blob/6e761b8ca0f44f8b5c3b46b6a8299919ec5ae4c9/recursive_templates/002_flat_output/output_flat_02.xml#L11-L29) (19 elements in output for P10307)  
+
 \*\* *They seem to function essentially the same **to me**, but I must be missing something!*
 
 #### UPDATE
