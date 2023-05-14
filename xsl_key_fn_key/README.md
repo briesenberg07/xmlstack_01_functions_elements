@@ -1,6 +1,6 @@
 # xsl:key + fn:key
-## Note
-- `fn:key` and `xsl:key` are still difficult for me! TO DO is read dh.obdurodon.org [on the xsl:key element](http://dh.obdurodon.org/xslt-basics-2.xhtml)
+## TO DOs
+- Read dh.obdurodon.org [on the xsl:key element](http://dh.obdurodon.org/xslt-basics-2.xhtml)
 ## Resources
 ### xsl:key
 - [Saxon documentation](https://www.saxonica.com/html/documentation/xsl-elements/key.html)
@@ -50,4 +50,3 @@
 **`)`**
 
 - [At this point](https://github.com/CECSpecialistI/UWLibCatProfiles/blob/ed602c72ed2cffe38ee34ef18bbd02ae629ff47a/scripts/rdfxml-to-html5.xsl#L25) I'm copying this pattern almost exactly in the new RDF/XML-to-HTML script. But I wanted to find a way to get rid of the fn:tokenize in the key `@use` and instead use a function for [the fn:key args](https://github.com/CECSpecialistI/UWLibCatProfiles/blob/ed602c72ed2cffe38ee34ef18bbd02ae629ff47a/scripts/rdfxml-to-html5.xsl#L62) that would expand the prefixed element (property) names to check against `propertyURI` values in the profile. I don't currently have experience with any such function though (2020-05-14).
-###### tags: `xslt`
