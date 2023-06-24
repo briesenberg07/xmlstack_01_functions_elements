@@ -10,6 +10,46 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>../pluralsight_xslt_courses/xslt-foundations-part1/3-xslt-foundations-part1-m3-exercise-files/bmr_m3_002.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>xslt_is_source_show_in_editor</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../pluralsight_xslt_courses/xslt-foundations-part1/3-xslt-foundations-part1-m3-exercise-files/bmr_m3_001.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>xslt_is_source_show_in_editor</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../xmlstack_02_use_cases/store_selective_tree_in_var/stylesheet.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -458,7 +498,17 @@
         </options>
     </meta>
     <projectTree name="xmlstack.xpr">
-        <folder path="."/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/1-xslt-foundations-part1-m1-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/10-xslt-foundations-part1-m10-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/11-xslt-foundations-part1-m11-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/12-xslt-foundations-part1-m12-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/3-xslt-foundations-part1-m3-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/4-xslt-foundations-part1-m4-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/5-xslt-foundations-part1-m5-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/6-xslt-foundations-part1-m6-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/7-xslt-foundations-part1-m7-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/8-xslt-foundations-part1-m8-exercise-files/"/>
+        <folder path="../pluralsight_xslt_courses/xslt-foundations-part1/9-xslt-foundations-part1-m9-exercise-files/"/>
         <folder path="."/>
         <folder path="../xmlstack_02_use_cases/"/>
     </projectTree>
