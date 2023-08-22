@@ -1,5 +1,7 @@
-# xml_stack
-xslt + xml stack practice/scratch pad
+# xmlstack_01_functions_elements
+xml stack (mostly all xslt) study space/practice/scratch pad  
+***see also [xmlstack_02_use_cases](https://github.com/briesenberg07/xmlstack_02_use_cases)***
+
 
 ## LEARNING/TUTORIALS/RESOURCES
 - dh.obdurodon.org > [XSLT](http://dh.obdurodon.org/#xslt)
