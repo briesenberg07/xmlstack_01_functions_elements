@@ -7,9 +7,8 @@
 
     <xsl:template match="/">
         <get_stuff_from_collection>
-            <!-- **syntax '?select=*.xml' is copied from a working example of fn:collection and I don't actually understand how it works** -->
             <xsl:apply-templates
-                select="collection('https://briesenberg07.github.io/xml_stack/collection/?select=*.xml')/xmls:doc"
+                select="collection('https://briesenberg07.github.io/xmlstack_01_functions_elements/fn_collection/?select=*.xml')/xmls:doc"
             />
         </get_stuff_from_collection>
     </xsl:template>
@@ -22,6 +21,5 @@
     </xsl:template>
     <!--
         FAILED
-        'I/O error reported by XML parser processing https://briesenberg07.github.io/xml_stack/collection/: 404 Not Found for: https://briesenberg07.github.io/xml_stack/collection/'
     -->
 </xsl:stylesheet>
