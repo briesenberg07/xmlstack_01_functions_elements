@@ -8,7 +8,7 @@
     <xsl:template match="/">
         <get_stuff_from_collection>
             <xsl:apply-templates
-                select="collection('https://briesenberg07.github.io/xmlstack_01_functions_elements/fn_collection/?select=*.xml')/xmls:doc"
+                select="collection('https://briesenberg07.github.io/xmlstack_01_functions_elements/fn_collection/?select=*.xml')/"
             />
         </get_stuff_from_collection>
     </xsl:template>
